@@ -1,0 +1,66 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('SL_123119_26540_06.jpg');
+    background-size: cover;
+  background-position: center;
+  height: 90vh;
+  padding: 38px;
+  }
+  .input-box label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-box {
+    width: 100%; /* Ajuste o tamanho da largura */
+    margin: 15px auto; /* Ajuste o espaçamento */
+    padding: 30px; /* Ajuste o espaçamento interno */
+    border: none 1px solid #ccc; /* Ajuste a cor da borda */
+    border-radius: 5px; /* Ajuste a curvatura da borda */
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-box input {
+    width: 100%; /* Ajuste o tamanho da largura do campo de entrada */
+    padding: 10px; /* Ajuste o espaçamento interno do campo de entrada */
+    border: none; /* Ajuste a cor da borda do campo de entrada */
+    border-radius: 5px; /* Ajuste a curvatura da borda do campo de entrada */
+    margin-inline: 0px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h1, p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    margin: 0 auto;
+    width: %;
+  }
+  button[type="submit"] {
+    margin-top: 20px;
+  }
