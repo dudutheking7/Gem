@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
-    background-image: url('SL_123119_26540_06.jpg');
+    background-image: url(/img/SL_123119_26540_06.jpg);
     background-size: cover;
   background-position: center;
   height: 90vh;
@@ -20,8 +21,7 @@
     padding: 30px; /* Ajuste o espaçamento interno */
     border: none 1px solid #ccc; /* Ajuste a cor da borda */
     border-radius: 5px; /* Ajuste a curvatura da borda */
-    align-content: center;
-    margin-bottom: 20px;
+
   }
   
   .input-box input {
@@ -30,6 +30,7 @@
     border: none; /* Ajuste a cor da borda do campo de entrada */
     border-radius: 5px; /* Ajuste a curvatura da borda do campo de entrada */
     margin-inline: 0px;
+    
   }
   
   button[type="submit"] {
@@ -40,27 +41,47 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
-  }
+
 
   h1 {
     font-size: 50px;
     font-weight: bold;
     color: #333;
-    text-align: center;
     margin-bottom: 20px;
   }
   h1, p {
     text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .input-box {
-    margin: 0 auto;
-    width: %;
   }
   button[type="submit"] {
     margin-top: 20px;
+    margin-left: 35px;
   }
+ 
+
+    #formulario {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    #formulario label {
+      width: 20%;
+    }
+    
+    #formulario input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #tabela {
+      background-color: gray;
+      margin: 0 auto;
+      width: 80%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+    
+    #tabela th, #tabela td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    
