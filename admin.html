@@ -10,33 +10,19 @@
   </head>
   <body>
   <div class="dash">
-    <h2 class="text-center mb-5">Alunos</h2>
-        <div class="table-responsive">
-            <button id="criar">Criar</button>
 
-            <div id="formulario-container" style="display: none;">
-                <form id="formulario">
-                    <div class="form-group">
-                      <label for="nome">Nome:</label>
-                      <input type="text" id="nome" name="nome">
-                    </div>
-                    <div class="form-group">
-                      <label for="idade">Idade:</label>
-                      <input type="number" id="idade" name="idade">
-                    </div>
-                    <div class="form-group">
-                      <label for="instrumento">Instrumento:</label>
-                      <input type="text" id="instrumento" name="instrumento">
-                    </div>
-                    <div class="form-group">
-                      <label for="escolaridade">Escolaridade:</label>
-                      <input type="text" id="escolaridade" name="escolaridade">
-                    </div>
-                    <button id="adicionar">Adicionar</button>
-                    <button id="fechar">Fechar</button>
-                  </form>
+      
             </div>
-            
+            <header>
+              <div class="navbar">
+                <div class="logo">Sistema De Administração Musical</a></div>
+                <ul class="links">
+                  <li><a href="home">Home</a></li>
+                  <li><a href="dashboard">Dashboard</a></li>
+                  <li><a href="suporte">Suporte</a></li>
+                </ul>
+              </div>
+            </header>
             <table id="tabela" class="mx-auto">
               <thead>
                 <tr>
@@ -50,6 +36,31 @@
                 <!-- As TRs serão criadas aqui -->
               </tbody>
             </table>
+            <div class="table-responsive">
+              <button id="criar">Criar</button>
+  
+              <div id="formulario-container" style="display: none;">
+                  <form id="formulario">
+                      <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                      </div>
+                      <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade">
+                      </div>
+                      <div class="form-group">
+                        <label for="instrumento">Instrumento:</label>
+                        <input type="text" id="instrumento" name="instrumento">
+                      </div>
+                      <div class="form-group">
+                        <label for="escolaridade">Escolaridade:</label>
+                        <input type="text" id="escolaridade" name="escolaridade">
+                      </div>
+                      <button id="adicionar">Adicionar</button>
+                      <button id="fechar">Fechar</button>
+                    </form>
+              </div>
 
   </div>
   <script src="script.js"></script>
