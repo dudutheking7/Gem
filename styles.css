@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,7 +13,7 @@
   background-image: url(/img/SL_123119_26540_06.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   padding: 38px;
 }
 
