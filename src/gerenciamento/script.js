@@ -44,8 +44,13 @@ function deleteItem(index) {
 function insertItem(item, index) {
   let tr = document.createElement('tr')
 
+  /* O evento de click estava sendo passado apenas para o nome, tendo que clicar nele para executar a função, aí eu criei o evento na própria linha que é criada e passando ela mesma. */
+  tr.addEventListener('click', () => {
+    openInfoModal(tr)
+  })
+
   tr.innerHTML = `
-   <td onclick="openInfoModal(this)">${item.nome}</td>
+   <td>${item.nome}</td>
     <td>${item.idade}</td>
     <td>${item.instrumento}</td>
     <td>${item.escolaridade}</td>
@@ -95,15 +100,17 @@ function loadItens() {
 loadItens()
 
 /* Script Abrir Modal de Informações Ad. */
-function openInfoModal(td) {
-  var tr = td.parentNode;
-  var nome = tr.cells[0].textContent;
-  var idade = tr.cells[1].textContent;
-  var instrumento = tr.cells[2].textContent;
-  var escolaridade = tr.cells[3].textContent;
+/* Achei confusa a forma que estava sendo feita, então agora ao clicar na linha, ela me passa as próprias informações e eu recebo na função (tr). */
+function openInfoModal(tr) {
+  /* Como a linha está sendo passada diretamente, basta pegar as informações, e os dados não conseguiam ser pegos por 'textContent', mas sim por 'innerText', pois está pegando um elemento. */
+  var nome = tr.cells[0].innerText;
+  var idade = tr.cells[1].innerText;
+  var instrumento = tr.cells[2].innerText;
+  var escolaridade = tr.cells[3].innerText;
 
   document.getElementById("nome-info").textContent = nome;
   document.getElementById("idade-info").textContent = idade;
+  /* Não mexi em nada aqui, mas só pra avisar que esses eram os ids enquanto lá no html faltavam o '-info' no final. */
   document.getElementById("instrumento-info").textContent = instrumento;
   document.getElementById("escolaridade-info").textContent = escolaridade;
 
