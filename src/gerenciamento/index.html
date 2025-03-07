@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="lateral">
+        <h2>Sistema de Admnistração Musical</h2>
+        <ul>
+          <li><a href="#">Alunos</a></li>
+          <li><a href="#">Alunas</a></li>
+        </ul>
+      </div>
+      <div class="conteudo">
+    <div class="container">
+        <div class="header">
+            <span> Listagem de Alunos</span>
+            <button onclick="openModal()" id="new">incluir</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Instrumento</th>
+                    <th>Escolaridade</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+            </table>
+        </div>
+
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome"type="text" required>
+                    <label for="m-idade">Idade</label>
+                    <input id="m-idade"type="number" required>
+                    <label for="m-instrumento">Instrumento</label>
+                    <input id="m-instrumento"type="text" required>
+                    <label for="m-escolaridade">Escolaridade</label>
+                    <input id="m-escolaridade"type="text" required>
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container-info">
+        <div class="modal-info">
+            <h2>Informações Adicionais</h2>
+            <p>Nome: <span id="nome-info"></span></p>
+            <p>Idade: <span id="idade-info"></span></p>
+            <p>Instrumento: <span id="instrumento"></span></p>
+            <p>Escolaridade: <span id="escolaridade"></span></p>
+            <button id="btnFecharInfo">Fechar</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

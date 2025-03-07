@@ -5,6 +5,7 @@ const tabela = document.getElementById('tabela');
 const corpoTabela = document.getElementById('corpo-tabela');
 const fecharBotao = document.getElementById('fechar');
 
+
 criarBotao.addEventListener('click', () => {
   formularioContainer.style.display = 'block';
 });
@@ -24,6 +25,7 @@ formulario.addEventListener('submit', (e) => {
     <td>${escolaridade}</td>
   `;
   corpoTabela.appendChild(tr);
+  
 
   // Limpa os campos do formulário
   document.getElementById('nome').value = '';

@@ -108,6 +108,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      background-color: 
 
     }
     .navbar .links {
@@ -130,3 +131,8 @@
     #criar {
       background-color: #4CAF50;
     }
+    .dash{
+      background-color:  #af4c4c ;
+    
+    }
+    
