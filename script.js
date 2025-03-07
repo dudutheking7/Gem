@@ -44,7 +44,7 @@ function logar(){
   var senha =document.getElementById('senha').value
 if (login == "admin" && senha == "admin"){
   alert("Bem vindo, administrador!");
-  window.location.href = "admin.html";
+  window.location.href = "src/gerenciamento/index.html";
   }else{
     alert("Login ou senha inválidos!");
     }
