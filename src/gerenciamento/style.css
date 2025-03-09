@@ -9,11 +9,13 @@
   .conteudo {
     width: 80vw;
     height: 100vh;
+    background-image: url(/img/SL_123119_26540_06.jpg);
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.1);
+    background-size: 50% 50%;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   button {
     cursor: pointer;
@@ -213,13 +215,14 @@
   }
 /* HTML DUDU */
 div {
-    border: 1px solid #000;
+    /*border: 1px solid #000; */
   }
   .lateral {
     width: 200px;
-  background-color: #f0f0f0;
+    height: 100vh;
+  background-color: #66656521;
   padding: 20px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
   float: left;
   }
   
