@@ -45,7 +45,8 @@ function insertItem(item, index) {
   let tr = document.createElement('tr')
 
   /* O evento de click estava sendo passado apenas para o nome, tendo que clicar nele para executar a função, aí eu criei o evento na própria linha que é criada e passando ela mesma. */
-  tr.addEventListener('click', () => {
+  tr.addEventListener('click', (ev) => {
+    ev.stopPropagation()
     openInfoModal(tr)
   })
 
