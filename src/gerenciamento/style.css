@@ -303,7 +303,7 @@ div {
       font-size: 10px;
       line-height: 1.2;
     }
-    }
+    
     table td {
       width: 200px;
     }
@@ -347,5 +347,4 @@ div {
       align-items: center;
       padding: 20px;
     }
-    
   }
