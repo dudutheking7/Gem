@@ -251,15 +251,7 @@ div {
   .lateral a:hover {
     color: #23527c;
   }
-  @media (max-width: 768px) {
-    .lateral {
-      width: 100%;
-      float: none; /* Remova a propriedade float em dispositivos móveis */
-    }
-    .conteudo {
-      margin-left: 0; /* Remova o espaço à esquerda em dispositivos móveis */
-    }
-  }
+
   .conteudo {
     margin-left: 280px; /* Adicione um espaço de 220px à esquerda */
     padding: 20px;
@@ -301,4 +293,59 @@ div {
   }
   #btnFecharInfo:hover {
     background-color: #3e8e41;
+  }
+
+
+  /* css mobile */
+  @media (max-width: 768px) {
+    /* Regras de estilo para mobile */
+    body {
+      font-size: 10px;
+      line-height: 1.2;
+    }
+    }
+    table td {
+      width: 200px;
+    }
+    .lateral {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100vh;
+      background-color: #333;
+      padding: 20px;
+      z-index: 1;
+    }
+    
+    
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .conteudo {
+      margin-left: 0!important;
+      width: 100vw;
+      height: 100vh;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    
   }

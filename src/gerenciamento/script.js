@@ -9,6 +9,7 @@ const btnSalvar = document.querySelector('#btnSalvar')
 let itens = []
 let id = undefined
 
+
 function openModal(edit = false, index = 0) {
   modal.classList.add('active')
 

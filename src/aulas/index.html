@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="container">
+            <div class="header">
+                <span>Relatório de Aulas</span>
+                <button onclick="OpenModal()" id="new">Criar</button>
+            </div>
+            <div class="divtable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <form>
+            <label>Selecionar Aluno:</label>
+            <select id="aluno" name="aluno">
+                <option value="">Selecione um aluno</option>
+            </select>
+            <br>
+            <label>Lição Atual:</label>
+            <input type="text" id="licao-atual" name="licao-atual" readonly>
+            <br>
+            <label>Método da Lição:</label>
+            <input type="text" id="metodo-licao" name="metodo-licao" readonly>
+            <br>
+            <label>Presença:</label>
+            <select id="presenca" name="presenca">
+              <option value="">Selecione uma opção</option>
+              <option value="presente">Presente</option>
+              <option value="ausente">Ausente</option>
+            </select>
+            <br>
+            <label>Progresso:</label>
+            <select id="progresso" name="progresso" disabled>
+              <option value="">Selecione uma opção</option>
+              <option value="passou">Passou</option>
+              <option value="nao-passou">Não passou</option>
+            </select>
+            <br>
+            <label>Próxima Lição:</label>
+            <input type="text" id="proxima-licao" name="proxima-licao" disabled>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
