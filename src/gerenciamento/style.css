@@ -17,6 +17,7 @@
     background-size: 50% 50%;
     background-color: rgba(0, 0, 0, 0.1);
   }
+  
   button {
     cursor: pointer;
   }
@@ -253,8 +254,25 @@ div {
   }
 
   .conteudo {
-    margin-left: 280px; /* Adicione um espaço de 220px à esquerda */
+    margin-left: 220px; /* Adicione um espaço de 220px à esquerda */
     padding: 20px;
+  }
+  .menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+  }
+  
+  .menu-mobile.show {
+    display: block;
+  }
+  .btn-menu {
+    display: block!important;
   }
   
   .modal-container-info {
@@ -294,7 +312,32 @@ div {
   #btnFecharInfo:hover {
     background-color: #3e8e41;
   }
+.btn-menu {
+  display: none!important;
+}
+.mob-header {
+display: none;
+}
+@media (max-width: 768px) {
+  /* Regra que define a visibilidade dos botões de menu em dispositivos móveis */
+  #openMenu {
+    display: block!important;
+  }
+  #closeMenu {
+    display: block!important;
+  }
+  
+}
 
+
+#openMenu, #closeMenu {
+  display: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+}
 
   /* css mobile */
   @media (max-width: 768px) {
@@ -303,48 +346,63 @@ div {
       font-size: 10px;
       line-height: 1.2;
     }
-    
+    .menu-mobile {
+      display:flex;
+    background-color: rgb(187, 187, 187);
+    height: auto;
+    justify-content: space-between;
+    top: 0px;
+    padding: 25px;
+    }
+    #openMenu {
+    }
     table td {
       width: 200px;
     }
     .lateral {
       display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100vh;
-      background-color: #333;
-      padding: 20px;
-      z-index: 1;
     }
-    
-    
     .container {
-      max-width: 400px;
-      margin: 20px auto;
-      padding: 20px;
-    }
-    
-    .header {
-      display: flex;
-      justify-content: space-between;
+      padding: 10px;
       align-items: center;
-      padding: 20px;
+      justify-content: center;
+      margin-top: 10%;
+      width: 100%;
     }
     
-    .conteudo {
-      margin-left: 0!important;
-      width: 100vw;
-      height: 100vh;
-      padding: 0px;
-      box-sizing: border-box;
+      .conteudo {
+        background-color: #333;
+        margin-top: 70px; /* Adicione essa linha para criar um espaço entre o cabeçalho e o conteúdo */
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-y: auto; /* Adicione essa linha para permitir que o conteúdo seja rolado */
+        margin-left: 0px; /* Adicione essa linha para criar um espaço à esquerda */
+      }
+    }
+    #openMenu {
+      position: relative;
+    }
+    #openMenu .mob-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f0f0f0; 
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: none;
+
     }
     
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
+    #openMenu:active div {
+      display: block;
     }
-  }
+     .mob-menu a {
+      display: block;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      font-size: 20px;
+    }
+   

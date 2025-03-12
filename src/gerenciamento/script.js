@@ -124,3 +124,8 @@ document.getElementById("btnFecharInfo").addEventListener("click", function() {
   var modalInfo = document.querySelector(".modal-container-info");
   modalInfo.style.display = "none";
 });
+const btnMenu = document.getElementById('openMenu');
+
+btnMenu.addEventListener('click', () => {
+  btnMenu.classList.toggle('active');
+});
