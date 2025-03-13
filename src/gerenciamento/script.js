@@ -124,8 +124,7 @@ document.getElementById("btnFecharInfo").addEventListener("click", function() {
   var modalInfo = document.querySelector(".modal-container-info");
   modalInfo.style.display = "none";
 });
-const btnMenu = document.getElementById('openMenu');
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
 
-btnMenu.addEventListener('click', () => {
-  btnMenu.classList.toggle('active');
-});
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
